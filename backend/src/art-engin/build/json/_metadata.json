@@ -1,0 +1,41 @@
+[
+  {
+    "name": "AGS #1",
+    "description": "Alter Grimace Society NFT Collection",
+    "image": "https://ags.mypinata.cloud/ipfs/QmNxLzqFuLWZ7bsrBVbMwL8mWFj6GMgcXcCTkBigafwQBi/1.png",
+    "dna": "caf9782a78a0cd7e53a0e4ae805e8f9a2561ca56",
+    "edition": 1,
+    "date": 1654798582510,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Fries"
+      },
+      {
+        "trait_type": "Alter",
+        "value": "Gold"
+      },
+      {
+        "trait_type": "Grimace",
+        "value": "Gold"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "Clown"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "Lizard"
+      },
+      {
+        "trait_type": "Headwear",
+        "value": "French Beret"
+      },
+      {
+        "trait_type": "Outfit",
+        "value": "Tuxedo"
+      }
+    ],
+    "compiler": "HashLips Art Engine"
+  }
+]

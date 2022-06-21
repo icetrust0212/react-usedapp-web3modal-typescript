@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Config, DAppProvider } from '@usedapp/core';
 import { NETWORK_ID, RPC_URL, DAPP_READONLY_RPC } from './config';
+import { createTheme, ThemeProvider } from '@mui/material';
 
 const config: Config = {
   readOnlyChainId: NETWORK_ID,
@@ -13,11 +14,22 @@ const config: Config = {
   },
 }
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#ED0C0C'
+    }
+  }
+});
+
+
 ReactDOM.render(
   <React.StrictMode>
-     <DAppProvider config={config}>
-      <App />
-    </DAppProvider>
+     <ThemeProvider theme={theme}>
+      <DAppProvider config={config}>
+        <App />
+      </DAppProvider>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

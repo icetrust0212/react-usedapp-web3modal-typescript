@@ -4,9 +4,10 @@ import { ethers } from "ethers";
 import Web3Modal from "web3modal";
 import { providerOptions } from "./providerOptions";
 import { useEtherBalance, useEthers } from '@usedapp/core'
+import { Button } from "@mui/material";
 
-const web3Modal = new Web3Modal({
-  cacheProvider: true, // optional
+export const web3Modal = new Web3Modal({
+  cacheProvider: false, // optional
   providerOptions // required
 });
 
@@ -31,6 +32,7 @@ const ConnectButton = () => {
   useEffect(() => {
     if (web3Modal.cachedProvider) {
       connectWallet();
+      console.log('connected')
     }
   }, []);
 
@@ -38,7 +40,7 @@ const ConnectButton = () => {
     <>
       <div>
         {!account ? (
-          <button onClick={connectWallet}>Connect Wallet</button>
+          <Button variant="contained" onClick={connectWallet}>Connect Wallet</Button>
         ) : (
           <>
             <button onClick={disconnect}>Disconnect</button>

@@ -11,3 +11,8 @@ export const toHex = (num: any) => {
   const val = Number(num);
   return "0x" + val.toString(16);
 };
+
+export const getLayer = (trait: string, name: string) => {
+  const art = require(`../assets/layers/${trait}/${name}.png`)
+  return art;
+}
